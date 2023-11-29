@@ -61,7 +61,6 @@ function defaultVideo() {
         type: "GET",
         dataType: "json",
         success: function (data) {
-            console.log(data)
             for (let i = 0; i < 12; i++) {
                 videoIDs[i] = data.items[i].id.videoId;
                 $('#videoPlayer' + i).attr('data-plyr-embed-id', videoIDs[i]);
